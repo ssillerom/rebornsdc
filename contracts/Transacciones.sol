@@ -65,6 +65,7 @@ contract Transacciones is registroUsuarios {
   }
 
   function comprarEnergia(address productorCompra, uint32 precioCompra, uint64 energiaComprada, address addressComprador, uint64 fechaCompra) soloUsuariosRegistrados public {
+    
     // entramos en el indice para ver las ofertas de venta de energia realizadas por el productor, productorCompra
     uint ventaId = indiceVenta[productorCompra];
 
